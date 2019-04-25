@@ -6,5 +6,5 @@ Identify segments of similar customers using data from a marketing campaign for 
 [Text classification](notebooks/review_classification.ipynb)
 Classify movie ratings using text of the movie review.
 
-[NFL Tracking](https://github.com/mworles/nfl_tracking)
-Use player-tracking data to analyze speed of ball-carriers and predict success of rushing plays. 
+[NFL Tracking](https://github.com/mworles/nfl_tracking)  
+Use player-tracking data to analyze speed of ball-carriers and predict success of rushing plays.
