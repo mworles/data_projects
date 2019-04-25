@@ -11,8 +11,8 @@ Classify movie ratings using text of the movie review.
 [NFL Tracking](https://github.com/mworles/nfl_tracking)  
 Use player-tracking data to analyze speed of ball-carriers and predict success of rushing plays.
 
-[College basketball upset prediction](https://github.com/mworles/bracket_vision)
+[College basketball upset prediction](https://github.com/mworles/bracket_vision)  
 Train machine-learning algorithms to predict upsets in the NCAA tournament 
 
 ### Blog posts
-Predicting Upsets in the NCAA Tournament with Machine Learning(https://towardsdatascience.com/predicting-upsets-in-the-ncaa-tournament-with-machine-learning-816fecf41f01?source=friends_link&sk=b3590066d81db17f861ddc76da358e13)
+[Predicting Upsets in the NCAA Tournament with Machine Learning](https://towardsdatascience.com/predicting-upsets-in-the-ncaa-tournament-with-machine-learning-816fecf41f01?source=friends_link&sk=b3590066d81db17f861ddc76da358e13)
