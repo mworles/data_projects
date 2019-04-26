@@ -1,4 +1,4 @@
-This is a repository to display various data science projects.
+Code, workbooks, and write-ups from various data science projects.
 
 ### Data Stories
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
