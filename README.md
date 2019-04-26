@@ -1,6 +1,6 @@
-Code, workbooks, and write-ups from various data science projects.
+Code, workbooks, and reports from various data science projects.
 
-### Data Stories
+### Stand-alone Workbooks
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
 Identify segments of similar customers using data from a marketing campaign for discounted wines.
 
