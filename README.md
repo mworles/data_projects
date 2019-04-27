@@ -1,15 +1,17 @@
 Code, workbooks, and reports from various data science projects
 
-### Unsupervised Learning
+## Standalone Workbooks and Reports
+
+#### Unsupervised Learning
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
 Identify customer segments using data from a marketing campaign for wine discounts
 
-### Natural Language Processing
+#### Natural Language Processing
 [Movie review text classification](notebooks/review_classification.ipynb)  
 Predict movie ratings using the text from movie reviews
 
 #### Data Cleaning/Wrangling
-[Player name merging and matching](notebooks/player_matching.ipynb)  
+[Player name matching](notebooks/player_matching.ipynb)  
 Clean and integrate data on basketball players scraped from multiple websites
 
 ## Major project repositories
