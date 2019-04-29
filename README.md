@@ -25,7 +25,7 @@ Use player-tracking data from the National Football League to analyze speed of b
 Use player, team, and coach performance data with machine-learning algorithms to predict upsets in the NCAA tournament 
 
 ## Full-length Reports
-[Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)
+[Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)  
 [The value of ball-carrier speed for rushing plays in the NFL](reports/nfl_tracking_1.pdf)
 
 
