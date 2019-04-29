@@ -15,17 +15,17 @@ Predict movie ratings using the text from movie reviews
 Clean and integrate data on basketball players scraped from multiple websites
 
 #### Data Visualization
-[Visualizing NCAA Tournament Upsets](notebooks/upset_visualization.ipynb)
+[Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)
 
-## Major project repositories
-[NFL Tracking](https://github.com/mworles/nfl_tracking)  
-Use player-tracking data to analyze speed of ball-carriers and predict success of rushing plays
+## Major Project Repositories
+[The value of ball-carrier speed for rushing plays in the NFL](https://github.com/mworles/nfl_tracking)  
+Use player-tracking data from the National Football League to analyze speed of ball-carriers and predict success of rushing plays
 
-[Prediction of Upsets in the NCAA Men's Basketball Tournament](https://github.com/mworles/bracket_vision)  
+[Prediction of upsets in the NCAA men's basketball tournament](https://github.com/mworles/bracket_vision)  
 Use player, team, and coach performance data with machine-learning algorithms to predict upsets in the NCAA tournament 
 
 ## Full-length Reports
-[Prediction of Upsets in the NCAA Men's Basketball Tournament](reports/upset_prediction_1_report.pdf)
+[Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)
 
 ## Blog posts
 [Predicting Upsets in the NCAA Tournament with Machine Learning](https://towardsdatascience.com/predicting-upsets-in-the-ncaa-tournament-with-machine-learning-816fecf41f01?source=friends_link&sk=b3590066d81db17f861ddc76da358e13)  
