@@ -26,6 +26,8 @@ Use player, team, and coach performance data with machine-learning algorithms to
 
 ## Full-length Reports
 [Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)
+[The value of ball-carrier speed for rushing plays in the NFL](reports/nfl_tracking_1.pdf)
+
 
 ## Blog posts
 [Predicting Upsets in the NCAA Tournament with Machine Learning](https://towardsdatascience.com/predicting-upsets-in-the-ncaa-tournament-with-machine-learning-816fecf41f01?source=friends_link&sk=b3590066d81db17f861ddc76da358e13)  
