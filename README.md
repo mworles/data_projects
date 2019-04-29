@@ -1,6 +1,6 @@
 Code, workbooks, and reports from various data science projects
 
-## Project Workbooks
+## Project Workbooks and Code
 
 #### Unsupervised Learning
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
@@ -14,15 +14,18 @@ Predict movie ratings using the text from movie reviews
 [Player name matching](notebooks/player_matching.ipynb)  
 Clean and integrate data on basketball players scraped from multiple websites
 
+#### Data Visualization
+[Visualizing NCAA Tournament Upsets](notebooks/upset_visualization.ipynb)
+
 ## Major project repositories
 [NFL Tracking](https://github.com/mworles/nfl_tracking)  
 Use player-tracking data to analyze speed of ball-carriers and predict success of rushing plays
 
-[Predicting upsets in college basketball](https://github.com/mworles/bracket_vision)  
+[Prediction of Upsets in the NCAA Men's Basketball Tournament](https://github.com/mworles/bracket_vision)  
 Use player, team, and coach performance data with machine-learning algorithms to predict upsets in the NCAA tournament 
 
 ## Full-length Reports
-
+[Prediction of Upsets in the NCAA Men's Basketball Tournament](reports/upset_prediction_1_report.pdf)
 
 ## Blog posts
 [Predicting Upsets in the NCAA Tournament with Machine Learning](https://towardsdatascience.com/predicting-upsets-in-the-ncaa-tournament-with-machine-learning-816fecf41f01?source=friends_link&sk=b3590066d81db17f861ddc76da358e13)  
