@@ -5,13 +5,13 @@ I'm a quantitative research psychologist with 11 years of experience in a lead d
 This repository is central listing of code, workbooks, and reports from various data science projects. The portfolio contains four sections:
 
 [Workbooks](#workbooks) - Jupyter notebooks with write-up and code from brief projects. Links organized by topic or function.  
-[Major Project Repositories](#major-project-repositories) - Repositories containing code and other materials for larger end-to-end projects.  
+[Major Project Repositories](#projects) - Repositories containing code and other materials for larger end-to-end projects.  
 [Full-Length Reports](#full-length-reports) - Final written reports from end-to-end projects with summary of strategy and results.  
 [Blog Posts and Slides](#blog-posts-and-slides) - Quick reads from data science projects including blog posts and slide decks.  
 
-
+<a name="workbooks">
 ## Workbooks
-
+</a>
 #### Supervised Learning
 [Classification of upsets](notebooks/classifying_upsets.ipynb)  
 Build model to predict upsets in college basketball tournament using logistic regression
@@ -31,8 +31,9 @@ Clean and integrate data on basketball players scraped from multiple websites
 #### Data Visualization and Exploration
 [Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)
 
-
+<a name="projects">
 ## Major Project Repositories
+</a>
 [The value of ball-carrier speed for rushing plays in the NFL](https://github.com/mworles/nfl_tracking)  
 Use player-tracking data from the National Football League to analyze speed of ball-carriers and predict success of rushing plays
 
