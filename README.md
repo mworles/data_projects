@@ -1,24 +1,28 @@
-Code, workbooks, and reports from various data science projects
+## About Me
+I'm a quantitative research psychologist at the University of California, San Diego with 11 years of experience in a lead data role for scientific research teams. I have a strong educational and applied background in statistics and experimental design, along with end-to-end project experience in programming and machine learning. In my current position as an Assistant Professor at UCSD, I oversee a study in behavioral economics and serve as a consulting statistician for several research groups at UCSD. My main interests in data science are in sports analytics and predictive analytics. 
+
+### About This Portfolio
+I use this repository as a central listing of code, workbooks, reports, and blog posts from various data science projects. Please [contact me](mailto: majaworley@gmail.com) if you have any questions.  
 
 ## Workbooks and Code
 
-#### Supervised Learning
+### Supervised Learning
 [Classification of upsets](notebooks/classifying_upsets.ipynb)  
 Build model to predict upsets in college basketball tournament using logistic regression
 
-#### Unsupervised Learning
+### Unsupervised Learning
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
 Identify customer segments using data from a marketing campaign for wine discounts
 
-#### Natural Language Processing
+### Natural Language Processing
 [Movie review text classification](notebooks/review_classification.ipynb)  
 Predict movie ratings using the text from movie reviews
 
-#### Data Cleaning/Wrangling
+### Data Cleaning/Wrangling
 [Player name matching](notebooks/player_matching.ipynb)  
 Clean and integrate data on basketball players scraped from multiple websites
 
-#### Data Visualization and Exploration
+### Data Visualization and Exploration
 [Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)
 
 ## Major Project Repositories
