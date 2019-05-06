@@ -3,7 +3,7 @@ Code, workbooks, and reports from various data science projects
 ## Workbooks and Code
 
 #### Supervised Learning
-[Classification of upsets](notebooks/classifying_upsets.ipynb) 
+[Classification of upsets](notebooks/classifying_upsets.ipynb)  
 Predict upsets in college basketball tournament using classification algorithm
 
 #### Unsupervised Learning
@@ -18,7 +18,7 @@ Predict movie ratings using the text from movie reviews
 [Player name matching](notebooks/player_matching.ipynb)  
 Clean and integrate data on basketball players scraped from multiple websites
 
-#### Data Visualization and Exploring
+#### Data Visualization and Exploration
 [Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)
 
 ## Major Project Repositories
@@ -30,7 +30,7 @@ Use player, team, and coach performance data with machine-learning algorithms to
 
 ## Full-Length Reports
 [Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)  
-[Improving upset prediction through imbalanced classification and hyperparameter optimization](reports/upset_prediction_2_report.pdf)
+[Improving upset prediction through imbalanced classification and hyperparameter optimization](reports/upset_prediction_2_report.pdf)  
 [The value of ball-carrier speed for rushing plays in the NFL](reports/nfl_tracking_1.pdf)
 
 
