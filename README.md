@@ -1,8 +1,11 @@
 ## About Me
-I'm a quantitative research psychologist at the University of California, San Diego with 11 years of experience in a lead data role for scientific research teams. I have a strong educational and applied background in statistics and experimental design, along with end-to-end project experience in programming and machine learning. In my current position as an Assistant Professor at UCSD, I oversee a study in behavioral economics and serve as a consulting statistician for several research groups at UCSD. My main interests in data science are in sports analytics and predictive analytics. 
+I'm a quantitative research psychologist at the University of California, San Diego with 11 years of experience in a lead data role for scientific research teams. I have a strong educational and applied background in statistics and experimental design, along with end-to-end project experience in programming and machine learning. In my current position as an Assistant Professor, I am lead investigator on a behavioral economics research project and serve as a consulting data scientist for several research groups. My data science interests are mainly in sports analytics and predictive analytics. 
 
-### About This Portfolio
-I use this repository as a central listing of code, workbooks, reports, and blog posts from various data science projects. If you have any questions or want to talk, please contact me at majaworley@gmail.com. 
+### About this Portfolio
+This repository is central listing of code, workbooks, and reports from my data science projects. If you have any questions or want to talk, please contact me at majaworley@gmail.com. 
+
+#### [Workbooks and code](#Workbooks and Code)
+
 
 ## Workbooks and Code
 
