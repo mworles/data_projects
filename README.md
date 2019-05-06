@@ -4,7 +4,7 @@ Code, workbooks, and reports from various data science projects
 
 #### Supervised Learning
 [Classification of upsets](notebooks/classifying_upsets.ipynb)  
-Predict upsets in college basketball tournament using classification algorithm
+Build model to predict upsets in college basketball tournament using logistic regression
 
 #### Unsupervised Learning
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
