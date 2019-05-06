@@ -2,6 +2,10 @@ Code, workbooks, and reports from various data science projects
 
 ## Workbooks and Code
 
+#### Supervised Learning
+[Classification of upsets](notebooks/classifying_upsets.ipynb) 
+Predict upsets in college basketball tournament using classification algorithm
+
 #### Unsupervised Learning
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
 Identify customer segments using data from a marketing campaign for wine discounts
