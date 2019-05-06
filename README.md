@@ -4,10 +4,10 @@ I'm a quantitative research psychologist at the University of California, San Di
 ### About this Portfolio
 This repository is central listing of code, workbooks, and reports from my data science projects. If you have any questions or want to talk, please contact me at majaworley@gmail.com. 
 
-#### [Workbooks and code](#Workbooks and Code)
+#### [Workbooks and code](#code)
 
 
-## Workbooks and Code
+## Workbooks and Code<a name="code"></a>
 
 ### Supervised Learning
 [Classification of upsets](notebooks/classifying_upsets.ipynb)  
