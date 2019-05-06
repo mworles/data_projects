@@ -10,19 +10,19 @@ This repository is central listing of code, workbooks, and reports from various 
 **Blog Posts and Slides** - Quick reads from data science projects including blog posts and slide decks.  
 
 ## Workbooks
-#### Supervised Learning
+**Supervised Learning**
 [Classification of upsets](notebooks/classifying_upsets.ipynb)  
 Build model to predict upsets in college basketball tournament using logistic regression
 
-#### Unsupervised Learning
+**Unsupervised Learning**
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
 Identify customer segments using data from a marketing campaign for wine discounts
 
-#### Natural Language Processing
+**Natural Language Processing**
 [Movie review text classification](notebooks/review_classification.ipynb)  
 Predict movie ratings using the text from movie reviews
 
-#### Data Cleaning/Wrangling
+**Data Cleaning/Wrangling**
 [Player name matching](notebooks/player_matching.ipynb)  
 Clean and integrate data on basketball players scraped from multiple websites
 
