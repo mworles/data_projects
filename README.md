@@ -4,10 +4,14 @@ I'm a quantitative research psychologist with 11 years of experience in a lead d
 ## About this Portfolio
 This repository is central listing of code, workbooks, and reports from various data science projects. The portfolio contains four sections:
 
-[Workbooks](#workbooks) - Jupyter notebooks with write-up and code from brief projects. Links organized by topic or function.  
-[Major Project Repositories](#projects) - Repositories containing code and other materials for larger end-to-end projects.  
-[Full-Length Reports](#reports) - Final written reports from end-to-end projects with summary of strategy and results.  
-[Blog Posts and Slides](#posts) - Quick reads from data science projects including blog posts and slide decks.  
+[Workbooks](#workbooks)  
+Jupyter notebooks with write-up and code from brief projects. Links organized by topic or function.  
+[Major Project Repositories](#projects)  
+Repositories containing code and other materials for larger end-to-end projects.  
+[Full-Length Reports](#reports)  
+Final written reports from end-to-end projects with summary of strategy and results.  
+[Blog Posts and Slides](#posts)  
+Quick reads from data science projects including blog posts and slide decks.  
 
 
 ## Workbooks<a name="workbooks"></a>
