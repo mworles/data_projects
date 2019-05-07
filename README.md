@@ -6,8 +6,8 @@ This repository is central listing of code, workbooks, and reports from various 
 
 [Workbooks](#workbooks) - Jupyter notebooks with explanation and code from brief projects. Links organized by topic or function.  
 [Major Project Repositories](#major-project-repositories) - Repositories containing code and other materials for larger end-to-end projects.  
-**Full-Length Reports** - Final written reports from end-to-end projects with summary of strategy and results.  
-**Blog Posts and Slides** - Quick reads from data science projects including blog posts and slide decks.  
+[Full-Length Reports](#full-length-reports) - Final written reports from end-to-end projects with summary of strategy and results.  
+[Blog Posts and Slides](*blog-posts-and-slides) - Quick reads from data science projects including blog posts and slide decks.  
 
 ## Workbooks
 **Supervised Learning**  
@@ -27,7 +27,8 @@ Predict movie ratings using the text from movie reviews
 Clean and integrate data on basketball players scraped from multiple websites
 
 #### Data Visualization and Exploration
-[Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)
+[Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)  
+Data story on upsets in college basketball tournament
 
 ## Major Project Repositories
 [The value of ball-carrier speed for rushing plays in the NFL](https://github.com/mworles/nfl_tracking)  
