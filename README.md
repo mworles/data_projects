@@ -17,15 +17,15 @@ The portfolio contains four sections:
 [Classification of upsets](notebooks/classifying_upsets.ipynb)  
 Build model to predict upsets in college basketball tournament using logistic regression
 
-**Unsupervised Learning**
+**Unsupervised Learning**  
 [Customer segmentation](notebooks/customer_clustering.ipynb)  
 Identify customer segments using data from a marketing campaign for wine discounts
 
-**Natural Language Processing**
+**Natural Language Processing**  
 [Movie review text classification](notebooks/review_classification.ipynb)  
 Predict movie ratings using the text from movie reviews  
 
-**Data Cleaning/Wrangling**
+**Data Cleaning/Wrangling**  
 [Player name matching](notebooks/player_matching.ipynb)  
 Clean and integrate data on basketball players scraped from multiple websites
 
@@ -46,9 +46,10 @@ Use player, team, and coach performance data with machine-learning algorithms to
 [The value of ball-carrier speed for rushing plays in the NFL](reports/nfl_tracking_1.pdf)  
 
 ## Blog Posts and Slides
-**Blog Posts**
+**Blog Posts**  
 [Predicting Upsets in the NCAA Tournament with Machine Learning](https://towardsdatascience.com/predicting-upsets-in-the-ncaa-tournament-with-machine-learning-816fecf41f01?source=friends_link&sk=b3590066d81db17f861ddc76da358e13)  
 [From First Four to Sweet 16: How I predicted Syracuse would upset Michigan State](https://towardsdatascience.com/from-first-four-to-sweet-16-how-i-predicted-syracuse-would-upset-michigan-state-32fc95c96fa4?source=friends_link&sk=5c8890c53c838a154288c52183af0ae3)  
 [Use my upset prediction model to pick underdogs in your NCAA tournament bracket](https://towardsdatascience.com/use-my-upset-prediction-model-to-pick-underdogs-in-your-ncaa-tournament-bracket-87c4aa3935f5?source=friends_link&sk=aa4bbb08d41a35ca6e40d984945b646f)  
-**Slides**
+
+**Slides**  
 [Spotting Cinderella at the Dance - Predicting Upsets in the NCAA Basketball Tournament](posts/upsets_deck.pdf)  
