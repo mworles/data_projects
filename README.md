@@ -9,7 +9,7 @@ The portfolio contains four sections:
 
 [Workbooks](#workbooks) - Jupyter notebooks with explanation and code from brief projects. Links are organized by topic or function.
 [Major Project Repositories](#major-project-repositories) - Repositories containing code and other materials for larger end-to-end projects.
-[Major Project Reports](#major-project-reports) - Full written reports from end-to-end projects with summary of strategy and results.
+[Major Project Reports](#major-project-reports) - Full written reports from end-to-end projects with summary of strategy and results.  
 [Blog Posts and Slides](#blog-posts-and-slides) - Quick reads from data science projects including blog posts and slide decks.
 
 ## Workbooks
