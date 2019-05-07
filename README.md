@@ -1,9 +1,10 @@
 ## About Me
 I'm a quantitative research psychologist with 11 years of experience in a lead data role for scientific research teams. I have a strong educational and applied background in statistics and experimental design, along with end-to-end project experience in programming and machine learning. In my current position as an Assistant Professor at the University of California San Diego, I lead a behavioral economics research project and serve as a consulting data scientist for several research groups.
+
 Contact me at majaworley@gmail.com.
 
 ## About this Portfolio
-This repository is central listing of code, workbooks, and reports from data science projects.
+This repository is a central listing of code, workbooks, and reports from data science projects.
 
 The portfolio contains four sections:
 
@@ -13,7 +14,7 @@ The portfolio contains four sections:
 [Blog Posts and Slides](#blog-posts-and-slides) - Quick reads from data science projects including blog posts and slide decks.
 
 ## Workbooks
-**Supervised Learning**
+**Supervised Learning**  
 [Classification of upsets](notebooks/classifying_upsets.ipynb)  
 Build model to predict upsets in college basketball tournament using logistic regression
 
@@ -30,7 +31,7 @@ Predict movie ratings using the text from movie reviews
 Clean and integrate data on basketball players scraped from multiple websites
 
 **Data Visualization and Exploration**  
-[Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)
+[Visualizing NCAA tournament upsets](notebooks/upset_visualization.ipynb)  
 Data story on upsets in college basketball tournament
 
 ## Major Project Repositories
