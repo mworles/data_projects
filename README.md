@@ -1,5 +1,5 @@
 ## About Me
-I'm a quantitative researcher with a Ph.D. in psychology and 11 years of experience in a lead data role for scientific research teams. I have a strong educational and applied background in statistics and experimental design, along with end-to-end project experience in programming and machine learning. In my current position as an Assistant Professor at the University of California San Diego, I lead a behavioral economics research project and serve as a consulting data scientist for several research groups.
+I'm a quantitative researcher with 11 years of experience in a lead data role for scientific research teams. I have a strong educational and applied background in statistics and experimental design, along with end-to-end project experience in programming and machine learning. In my current position as an Assistant Professor at the University of California San Diego, I lead a behavioral economics research project and serve as a consulting data scientist for several research groups.
 
 Contact me at majaworley@gmail.com.
 
