@@ -26,7 +26,7 @@ Use player, team, and coach performance data with machine-learning algorithms to
 
 ## Full-Length Reports
 [Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)  
-[Improving upset prediction through imbalanced classification and hyperparameter optimization](reports/upset_prediction_2_report.pdf)
+[Improving upset prediction through imbalanced classification and hyperparameter optimization](reports/upset_prediction_2_report.pdf)  
 [The value of ball-carrier speed for rushing plays in the NFL](reports/nfl_tracking_1.pdf)
 
 
