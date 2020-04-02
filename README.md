@@ -1,25 +1,34 @@
 ## About Me
-I'm a quantitative researcher with 11 years of experience in a lead data role for scientific research teams. I have a strong educational and applied background in statistics and experimental design, along with end-to-end project experience in programming and machine learning. In my current position as an Assistant Professor at the University of California San Diego, I lead a behavioral economics research project and serve as a consulting data scientist for several research groups.
+I'm a quantitative researcher with a Ph.D. in psychology and 11 years of experience 
+as lead statistician for scientific research teams. I have a strong background 
+in statistics and experimental design, along with strong programming and 
+machine learning skills acquired through end-to-end projects. 
+In my current position as an Assistant Professor at the University of California 
+San Diego, I serve as a consulting data scientist for scientific investigators.
 
 Contact me at majaworley@gmail.com.
 
-## About this Portfolio
-This repository is a central listing of code, workbooks, and reports from data science projects.
+## This Portfolio
+This repository provides a central listing of code, workbooks, and reports from 
+my data science work, organized into four sections:
 
-The portfolio contains four sections:
-
-[Workbooks](#workbooks) - Jupyter notebooks with explanation and code from smaller-scale projects or intermediate steps from larger projects. Links are organized by topic or function.  
-[Project Repositories](#major-project-repositories) - Repositories containing code and other materials for full end-to-end projects.  
-[Project Reports](#major-project-reports) - Written reports from full end-to-end projects including strategy and results.  
-[Blog Posts and Slides](#blog-posts-and-slides) - Quick reads from data science projects including blog posts and slide decks.
+[Workbooks](#workbooks) - Stand-alone notebooks with descriptive text and code 
+from smaller-scale projects or subcomponents of larger projects. Workbook links 
+are organized by topic.  
+[Project Repositories](#major-project-repositories) - Links to other repositories 
+containing code and other materials for full end-to-end projects.  
+[Project Reports](#major-project-reports) - Written reports from full end-to-end 
+projects including a description of strategy and results.  
+[Blog Posts and Slides](#blog-posts-and-slides) - Quick reads from data science 
+projects designed for broad distribution.  
 
 ## Workbooks
 **Supervised Learning**  
-[Classification of upsets](notebooks/classifying_upsets.ipynb)  
+[Classification of upsets in college basketball](notebooks/classifying_upsets.ipynb)  
 Build model to predict upsets in college basketball tournament using logistic regression
 
 **Unsupervised Learning**  
-[Customer segmentation](notebooks/customer_clustering.ipynb)  
+[Wine customer segmentation](notebooks/customer_clustering.ipynb)  
 Identify customer segments using data from a marketing campaign for wine discounts
 
 **Natural Language Processing**  
