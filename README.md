@@ -10,14 +10,14 @@ Contact me at majaworley@gmail.com.
 
 ## This Portfolio
 This repository provides a central listing of code, workbooks, and reports from 
-my data science work, organized into four sections:
+my data science work. 
 
 [Workbooks](#workbooks) - Stand-alone notebooks with descriptive text and code 
-from smaller-scale projects or subcomponents of larger projects. Workbook links 
-are organized by topic.  
-[Project Repositories](#major-project-repositories) - Links to other repositories 
+from smaller-scale projects or intermediate steps of larger projects. Workbook links organized by topic.  
+[Project Repositories](#project-repositories) - Links to other repositories 
 containing code and other materials for full end-to-end projects.  
-[Project Reports](#major-project-reports) - Written reports from full end-to-end 
+[Code Samples](#code-samples) - Samples of code from various projects.  
+[Project Reports](#project-reports) - Written reports from full end-to-end 
 projects including a description of strategy and results.  
 [Blog Posts and Slides](#blog-posts-and-slides) - Quick reads from data science 
 projects designed for broad distribution.  
@@ -52,6 +52,9 @@ Use player, team, and coach performance data with machine-learning algorithms to
 
 [Draft Navigator](https://github.com/mworles/draftnav)  
 Interactive tool for live guidance in fantasy auction drafts using object-oriented programming and convex optimization  
+
+## Code Samples
+
 
 ## Project Reports
 [Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)  
