@@ -12,8 +12,8 @@ Contact me at majaworley@gmail.com.
 This repository provides a central listing of code, workbooks, and reports from 
 my data science work. 
 
-[Workbooks](#workbooks) - Stand-alone notebooks with descriptive text and code 
-from smaller-scale projects or intermediate steps of larger projects. Workbook links organized by topic.  
+[Workbooks](#workbooks) - Stand-alone notebooks with code and explanatory text 
+for smaller projects or intermediate steps of larger projects.  
 [Project Repositories](#project-repositories) - Links to other repositories 
 containing code and other materials for full end-to-end projects.  
 [Code Samples](#code-samples) - Samples of code from various projects.  
