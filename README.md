@@ -54,7 +54,8 @@ Use player, team, and coach performance data with machine-learning algorithms to
 Interactive tool for live guidance in fantasy auction drafts using object-oriented programming and convex optimization  
 
 ## Code Samples
-
+[Transfer module](code/transfer)
+A python module for data insertion and extraction with MySQL database using the PyMySQL package.  
 
 ## Project Reports
 [Prediction of upsets in the NCAA men's basketball tournament](reports/upset_prediction_1_report.pdf)  
