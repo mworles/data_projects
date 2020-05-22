@@ -9,5 +9,4 @@ CONFIG_FILE= os.path.join(PATH_HERE, CONFIG)
 SCHEMA = 'schema.json'
 SCHEMA_FILE = os.path.join(PATH_HERE, SCHEMA)
 
-#DB_NAME = 'database_name'
-DB_NAME = 'bball'
+DB_NAME = 'database_name'
