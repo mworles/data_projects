@@ -18,6 +18,9 @@ import os
 import pandas as pd
 import pymysql
 
+# set max width of VARCHAR columns
+MAX_CHARACTER_WIDTH = 64
+
 # create absolute path to this file
 PATH_HERE = os.path.abspath(os.path.dirname(__file__))
 
@@ -73,11 +76,11 @@ class DBAssist():
         parser = ConfigParser.ConfigParser()
         parser.readfp(open(config_file))
         
-        conn = pymysql.connect(host=parser.get('Local', 'host'),
-                               port=int(parser.get('Local', 'port')),
-                               user=parser.get('Local', 'user'),
-                               passwd=parser.get('Local', 'pwd'),
-                               db=parser.get('Local', 'db'))
+        conn = pymysql.connect(host=parser.get('Settings', 'host'),
+                               port=int(parser.get('Settings', 'port')),
+                               user=parser.get('Settings', 'user'),
+                               passwd=parser.get('Settings', 'pwd'),
+                               db=parser.get('Settings', 'db'))
         return conn
 
     def close(self):
@@ -456,7 +459,7 @@ class DBColumn(object):
         # if any strings use VARCHAR, otherwise use FLOAT
         if 'str' in elem_types:
             # len 64 is minimumm sufficient size for expected values
-            column_type = " VARCHAR (64)"
+            column_type = " VARCHAR ({})".format(MAX_CHARACTER_WIDTH)
         else:
             column_type = " FLOAT"
 
