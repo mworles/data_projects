@@ -14,11 +14,18 @@ DBAssist
 """
 import ConfigParser
 import json
+import os
 import pandas as pd
 import pymysql
-from settings import SCHEMA_FILE
-from settings import CONFIG_FILE
-from settings import DB_NAME
+
+# create absolute path to this file
+PATH_HERE = os.path.abspath(os.path.dirname(__file__))
+
+CONFIG = '.config'
+CONFIG_FILE= os.path.join(PATH_HERE, CONFIG)
+
+SCHEMA = 'schema.json'
+SCHEMA_FILE = os.path.join(PATH_HERE, SCHEMA)
 
 
 class DBAssist():
@@ -35,9 +42,8 @@ class DBAssist():
         A pymysql cursor called from the conn attribute.
 
     """
-    def __init__(self, db_name=DB_NAME):
+    def __init__(self):
         """Initialize DBAssist instance."""
-        self.db_name = db_name
         self.conn = self.connect()
         self.cursor = self.conn.cursor()
 
@@ -67,11 +73,11 @@ class DBAssist():
         parser = ConfigParser.ConfigParser()
         parser.readfp(open(config_file))
         
-        conn = pymysql.connect(host='127.0.0.1',
-                               port=3306,
+        conn = pymysql.connect(host=parser.get('Local', 'host'),
+                               port=int(parser.get('Local', 'port')),
                                user=parser.get('Local', 'user'),
                                passwd=parser.get('Local', 'pwd'),
-                               db=self.db_name)
+                               db=parser.get('Local', 'db'))
         return conn
 
     def close(self):
