@@ -4,17 +4,16 @@ from itertools import chain
 import pyspark.sql.functions as F
 import pyspark.sql.types as T
 
-def carrier_name(row):
+def carrier_name(play_text):
     """Return the ball carrier string from a play description."""
-    play = row['playDescription']
     run_directions = ['left end', 'left tackle', 'left guard', 'up the middle',
                       'right guard', 'right tackle', 'right end']
 
-    if any(tag in play for tag in run_directions):
-        direction_tags = [tag for tag in run_directions if tag in play]
+    if any(tag in play_text for tag in run_directions):
+        direction_tags = [tag for tag in run_directions if tag in play_text]
         if len(direction_tags) == 1:
             direction = direction_tags[0]
-            before_direction = play.split(direction)[0].rstrip()
+            before_direction = play_text.split(direction)[0].rstrip()
             carrier = before_direction.split(' ')[-1]
         else:
             carrier = 'NA'
@@ -23,48 +22,66 @@ def carrier_name(row):
 
     return carrier
 
+
 def player_name_id(row):
     name = "{}.{}".format(row[1][0], row[1].split(' ')[-1])
     return (name, row[0])
 
+def abbrev_length(name):
+    first_init = name.split('.')[0]
+    return len(first_init)
+
 
 # initialize local spark sql context
-sc = pyspark.SparkContext('local[8]')
+#sc = pyspark.SparkContext('local[8]')
 spark = pyspark.sql.SparkSession.builder.master('local[8]').getOrCreate()
 spark.conf.set('spark.sql.shuffle.partitions', 10)
 
 path = '../data/nfl/'
 game_id = '2017090700'
-#game_file = "{}{}{}{}".format(path, 'tracking/tracking_gameId_', game_id,
-#                              '.csv')
+#game_file = "{}{}{}{}".format(path, 'tracking/tracking_gameId_', game_id,'.csv')
 game_file = "{}{}".format(path, 'tracking/tracking_gameId_*.csv')
 plays_file = "{}{}".format(path, 'plays.csv')
 
 # load datasets
-game_moments = spark.read.csv(game_file, header=True)
+all_moments = spark.read.csv(game_file, header=True)
+print(all_moments.count())
 all_plays = spark.read.csv(plays_file, header=True)
 
-game_players = game_moments.select('nflId', 'displayName').distinct().rdd
-names_ids = game_players.map(lambda line: player_name_id(line))
-id_map = names_ids.collectAsMap()
-#mapper = F.create_map([F.lit(x) for x in chain(*id_map.items())])
-
 # create list of play ids with a handoff event to filter plays
-handoffs = game_moments.filter(game_moments['event'].contains('handoff'))
-handoff_ids = handoffs.select('playId').distinct()
-id_list = [row['playId'] for row in handoff_ids.rdd.collect()]
+handoff_moments = all_moments.filter(all_moments['event'].contains('handoff'))
+handoff_ids = handoff_moments.select('gameId', 'playId').distinct()
 
-# select plays from game and filter to those with a handoff
-plays_game = all_plays #.filter(all_plays['gameId'] == int(game_id))
-rushes = plays_game.filter(plays_game['playId'].isin(id_list))
+# use join to subset play descriptions
+plays = all_plays.select('playId', 'gameId', 'playDescription')
+rushes = plays.join(handoff_ids, on=['gameId', 'playId'], how='inner')
 
-# list of words in play descriptions to filter out undesired plays
-tags_remove = ['pass', 'TWO-POINT CONVERSION', 'scrambles', 'Aborted']
-for word in tags_remove:
-    rushes = rushes.filter(~rushes['playDescription'].contains(word))
+rushes = rushes.filter(~rushes['playDescription'].contains('pass'))
+rushes = rushes.filter(~rushes['playDescription'].contains('TWO-POINT CONVERSION'))
+rushes = rushes.filter(~rushes['playDescription'].contains('scrambles'))
+rushes = rushes.filter(~rushes['playDescription'].contains('Aborted'))
 
-# get ball carrier names
-carriers = rushes.select('playDescription').rdd.map(carrier_name)
+udf_carrier = F.udf(carrier_name, T.StringType())
+rushes = rushes.withColumn('carrier', udf_carrier(rushes['playDescription']))
+first_init = F.udf(abbrev_length, T.IntegerType())
+rushes = rushes.withColumn('first_len', first_init(rushes['carrier']))
 
 
-sc.stop()
+# merge carrier name back into handoff_moments
+handoff_moments = handoff_moments.select('playId', 'gameId', 'displayName')
+
+
+handoffs_carrier = handoff_moments.join(rushes, on=['gameId', 'playId'],
+                                        how='left')
+
+def truncate_display(display_name, first_length):
+    name_split = display_name.split(' ')
+    return "{}.{}".format(display_name[0:first_length], name_split[-1])
+    
+udf_truncate = F.udf(truncate_display, T.StringType())
+
+handoffs_carrier = handoffs_carrier.withColumn('display_trunc',
+                                               udf_truncate('DisplayName',
+                                                         'first_len'))
+
+carrier_moments = handoffs_carrier.filter('display_trunc = carrier')
