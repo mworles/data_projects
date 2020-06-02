@@ -28,7 +28,7 @@ def carrier_name(play_text):
     return carrier
 
 
-def lenth_of_initial(name):
+def length_of_initial(name):
     """Return the length of first name abbreviation from play descripton."""
     first_abbrev = name.split('.')[0]
     return len(first_abbrev)
@@ -51,6 +51,7 @@ plays_file = "{}{}".format(data_path, 'plays.csv')
 all_moments = spark.read.csv(game_file, header=True)
 all_plays = spark.read.csv(plays_file, header=True)
 
+"""
 # need unique plays containing a handoff event
 handoff_moments = all_moments.filter(all_moments['event'].contains('handoff'))
 handoff_ids = handoff_moments.select('gameId', 'playId').distinct()
@@ -74,8 +75,12 @@ rushes = rushes.withColumn('carrier', udf_carrier(rushes['playDescription']))
 udf_length = F.udf(length_of_initial, T.IntegerType())
 rushes = rushes.withColumn('first_len', udf_length(rushes['carrier']))
 
+
+
 # join ball carrier name and initial to moments from all handoff plays
-handoffs = handoff_moments.join(rushes, on=['gameId', 'playId'], how='left')
+rushes = rushes.select('gameId', 'playId', 'carrier', 'first_len')
+handoffs = handoff_moments.join(F.broadcast(rushes), on=['gameId', 'playId'],
+                                how='left')
 
 # truncate the player name in tracking data to match ball carrier name format
 udf_truncate = F.udf(truncate_display, T.StringType())
@@ -85,3 +90,10 @@ handoffs_carrier = handoffs.withColumn('display_trunc',
 
 # keep rows where tracking name matches carrier name
 carrier_moments = handoffs_carrier.filter('display_trunc = carrier')
+
+# keep unique columns needed to identify ball carriers on plays
+output = carrier_moments.select('gameId', 'playId', 'nflId', 'DisplayName')
+
+output = output.orderBy('gameId', 'playId')
+
+output.toPandas().to_csv('{}{}'.format(data_path, 'ball_carriers.csv'))
