@@ -35,7 +35,7 @@ Use player-tracking data from the National Football League to analyze speed of b
 Use player, team, and coach performance data with machine-learning algorithms to predict upsets in the NCAA tournament
 
 [Draft Navigator](https://github.com/mworles/draftnav)  
-Interactive tool for live guidance in fantasy auction drafts using object-oriented programming and convex optimization  
+Interactive tool for live guidance in fantasy sports auction drafts using object-oriented programming and convex optimization  
 
 ## Code Samples
 Single code files to highlight data tools and skills.  
