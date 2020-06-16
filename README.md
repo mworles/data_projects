@@ -31,7 +31,7 @@ Links to repositories for full end-to-end data projects.
 Use player-tracking data from the National Football League to analyze speed of ball-carriers and predict success of rushing plays  
 [Project Report](reports/nfl_tracking_1.pdf)  
 
-[Prediction of upsets in the NCAA men's basketball tournament](https://github.com/mworles/bracket_vision)  
+[Prediction of upsets in the NCAA men's basketball tournament](https://github.com/mworles/upset_detector)  
 Use player, team, and coach performance data with machine-learning algorithms to predict upsets in the NCAA tournament
 
 [Draft Navigator](https://github.com/mworles/draftnav)  
