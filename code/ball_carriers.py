@@ -51,7 +51,6 @@ plays_file = "{}{}".format(data_path, 'plays.csv')
 all_moments = spark.read.csv(game_file, header=True)
 all_plays = spark.read.csv(plays_file, header=True)
 
-"""
 # need unique plays containing a handoff event
 handoff_moments = all_moments.filter(all_moments['event'].contains('handoff'))
 handoff_ids = handoff_moments.select('gameId', 'playId').distinct()
