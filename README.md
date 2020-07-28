@@ -9,8 +9,6 @@ machine learning skills acquired through end-to-end projects.
 In my current position as an Assistant Professor at the University of California 
 San Diego, I serve as a consulting data scientist for scientific investigators.
 
-Contact me at majaworley@gmail.com.
-
 ## Workbooks
 Notebooks with code, annotation, and data
 visualizations from short projects or modular steps of large projects.
